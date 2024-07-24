@@ -120,7 +120,8 @@ def train_and_evaluate_model(model, X, y):
     
     # Calculating time taken
     time_taken = round(time.time() - start, 6)
-    print(f"Model training completed in {time_taken} seconds.\n\n")
+    print(f"Model training completed in {time_taken} seconds.")
+    print(f"Model performance (log-RMSE) : {error}.\n\n")
 
     return [error, time_taken]
 
